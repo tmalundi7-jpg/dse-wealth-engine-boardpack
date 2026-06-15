@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DSE Wealth Engine – Board Pack | Amana Capital East Africa</title>
+<style>
+/* ═══════════════════════════════════════════════════════════
+   AMANA CAPITAL EAST AFRICA — DSE WEALTH ENGINE BOARD PACK
+   Version 2.0 | June 2026 | Compact Professional Layout
+═══════════════════════════════════════════════════════════ */
+
+@page { size: A4; margin: 2.54cm 2.00cm; }
+@page cover { margin: 0; size: A4; }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11.5pt;
+  line-height: 1.15;
+  color: #111;
+  background: #fff;
+}
+
+/* ── HEADINGS ── */
+h1 {
+  font-size: 15pt; font-weight: 700; color: #003366;
+  margin-top: 0; margin-bottom: 5pt;
+  page-break-after: avoid; line-height: 1.15;
+}
+h2 {
+  font-size: 13pt; font-weight: 700; color: #003366;
+  margin-top: 9pt; margin-bottom: 3pt;
+  page-break-after: avoid;
+}
+h3 {
+  font-size: 12pt; font-weight: 700; color: #1a1a1a;
+  margin-top: 7pt; margin-bottom: 3pt;
+  page-break-after: avoid;
+}
+h4 {
+  font-size: 11.5pt; font-weight: 700; color: #222;
+  margin-top: 5pt; margin-bottom: 2pt;
+}
+
+/* ── PARAGRAPHS ── */
+p {
+  font-size: 11.5pt; line-height: 1.15;
+  margin-bottom: 5pt; text-align: justify;
+}
+
+/* ── LISTS ── */
+ul, ol {
+  margin-left: 16pt; margin-bottom: 5pt;
+  font-size: 11.5pt; line-height: 1.25;
+}
+li { margin-bottom: 2pt; }
+
+/* ── TABLES ── */
+table {
+  width: 100%; border-collapse: collapse;
+  margin: 5pt 0 7pt 0;
+  font-size: 10pt; line-height: 1.25;
+  page-break-inside: avoid;
+}
+th {
+  background: #003366; color: #fff;
+  font-weight: 700; padding: 5pt 7pt;
+  text-align: left; border: 1px solid #003366;
+  font-size: 10pt;
+}
+td {
+  padding: 4pt 7pt; border: 1px solid #bcc8d8;
+  vertical-align: top; font-size: 10pt; line-height: 1.25;
+}
+tr:nth-child(even) td { background: #f0f4f9; }
+tr:nth-child(odd) td  { background: #fff; }
+.row-hl td { background: #dce8f7 !important; font-weight: 700; }
+
+/* ── RULE ── */
+hr { border: none; border-top: 1.2pt solid #003366; margin: 8pt 0; }
+hr.thin { border-top: 0.5pt solid #bcc8d8; margin: 5pt 0; }
+
+/* ── STRONG / EM ── */
+strong { font-weight: 700; color: #003366; }
+em { font-style: italic; color: #444; }
+
+/* ════════════════════════════════════════════════════
+   COVER PAGE
+════════════════════════════════════════════════════ */
+.cover-page {
+  page: cover;
+  width: 210mm; min-height: 297mm;
+  background: #0D1B2A; color: #E8E2D9;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 30mm 28mm;
+  page-break-after: always;
+  position: relative;
+  margin: -2.54cm -2.00cm;
+}
+.cover-logo-area { margin-bottom: 18pt; display: flex; flex-direction: column; align-items: center; }
+.cover-brand-name {
+  font-size: 14pt; font-weight: 400; letter-spacing: 0.18em;
+  color: #E8E2D9; text-transform: uppercase; margin-top: 8pt; margin-bottom: 2pt;
+}
+.cover-brand-sub {
+  font-size: 8.5pt; letter-spacing: 0.25em; color: #9A9490; text-transform: uppercase;
+}
+.cover-divider {
+  width: 55mm; height: 0.5pt; background: rgba(232,226,217,0.3); margin: 14pt auto;
+}
+.cover-label {
+  font-size: 7.5pt; letter-spacing: 0.2em; color: #9A9490;
+  text-transform: uppercase; margin-bottom: 10pt;
+}
+.cover-title {
+  font-size: 26pt; font-weight: 700; color: #E8E2D9;
+  line-height: 1.1; margin-bottom: 8pt; letter-spacing: 0.02em;
+}
+.cover-subtitle {
+  font-size: 12pt; font-weight: 400; color: #9A9490;
+  line-height: 1.4; margin-bottom: 22pt; font-style: italic;
+}
+.cover-meta {
+  font-size: 11pt; color: #c0bab5; line-height: 1.7; margin-bottom: 18pt;
+}
+.cover-meta strong { color: #E8E2D9; font-weight: 700; }
+.cover-confidential {
+  font-size: 7.5pt; letter-spacing: 0.2em; color: #9A9490;
+  text-transform: uppercase;
+  border: 0.5pt solid rgba(154,148,144,0.4);
+  padding: 4pt 16pt; margin-top: 14pt;
+}
+.cover-accent {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 4pt;
+  background: linear-gradient(90deg, #003366 0%, #1E2F46 50%, #162540 100%);
+}
+
+/* ════════════════════════════════════════════════════
+   PAGE HEADER (running)
+════════════════════════════════════════════════════ */
+.pg-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 4pt; border-bottom: 0.5pt solid #9A9490; margin-bottom: 7pt;
+}
+.pg-header span { font-size: 8pt; color: #888; letter-spacing: 0.04em; }
+
+/* ════════════════════════════════════════════════════
+   TABLE OF CONTENTS
+════════════════════════════════════════════════════ */
+.toc-page { page-break-after: always; }
+.toc-title {
+  font-size: 15pt; font-weight: 700; color: #003366;
+  border-bottom: 1.5pt solid #003366; padding-bottom: 4pt; margin-bottom: 10pt;
+}
+.toc-entry {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 11pt; line-height: 1.5; padding: 2pt 0;
+  border-bottom: 0.5pt dotted #bcc8d8;
+}
+.toc-main { font-weight: 700; color: #003366; margin-top: 4pt; }
+.toc-sub  { padding-left: 16pt; color: #444; font-size: 10.5pt; }
+.toc-num  { color: #888; font-size: 9.5pt; flex-shrink: 0; }
+
+/* ════════════════════════════════════════════════════
+   SECTION BANNER (replaces h1 at top of each section)
+════════════════════════════════════════════════════ */
+.sec-banner {
+  background: #003366; color: #E8E2D9;
+  padding: 6pt 10pt; margin-bottom: 9pt;
+  margin-left: -2.00cm; margin-right: -2.00cm;
+  padding-left: 2.00cm; padding-right: 2.00cm;
+}
+.sec-banner h1 { color: #E8E2D9; margin: 0; font-size: 14pt; letter-spacing: 0.04em; }
+
+/* ════════════════════════════════════════════════════
+   STRATEGY BLOCKS
+════════════════════════════════════════════════════ */
+.strat-hdr {
+  background: #162540; color: #E8E2D9;
+  padding: 5pt 10pt; margin-top: 10pt; margin-bottom: 6pt;
+}
+.strat-hdr h3 { color: #E8E2D9; font-size: 12pt; margin: 0; }
+
+/* ════════════════════════════════════════════════════
+   CALLOUT BOXES
+════════════════════════════════════════════════════ */
+.key-box {
+  border-left: 3pt solid #003366; background: #eef3fa;
+  padding: 6pt 10pt; margin: 6pt 0; font-size: 11pt;
+}
+.legal-box {
+  border: 0.5pt solid #bcc8d8; background: #f8f9fc;
+  padding: 7pt 10pt; margin: 8pt 0; font-size: 10pt;
+  line-height: 1.4; color: #555;
+}
+.law-card {
+  border: 0.5pt solid #bcc8d8; margin: 7pt 0;
+  page-break-inside: avoid; font-size: 10.5pt;
+}
+.law-card-title {
+  background: #003366; color: #fff;
+  padding: 4pt 9pt; font-weight: 700; font-size: 11pt;
+}
+.law-card-body { padding: 6pt 9pt; }
+.law-card-body table { margin: 3pt 0 0 0; }
+.law-card-body td { border: none; border-bottom: 0.5pt solid #dce4f0; padding: 3pt 6pt; }
+.law-card-body tr:last-child td { border-bottom: none; }
+.law-label { color: #003366; font-weight: 700; white-space: nowrap; width: 90pt; }
+
+/* ════════════════════════════════════════════════════
+   APPENDIX HEADERS
+════════════════════════════════════════════════════ */
+.app-hdr {
+  background: #1E2F46; color: #E8E2D9;
+  padding: 4pt 9pt; margin-top: 10pt; margin-bottom: 5pt;
+}
+.app-hdr h3 { color: #E8E2D9; font-size: 11.5pt; margin: 0; }
+
+/* ════════════════════════════════════════════════════
+   DOCUMENT DIVIDER PAGE
+════════════════════════════════════════════════════ */
+.doc-divider-page {
+  page-break-before: always;
+  background: #0D1B2A;
+  min-height: 297mm;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  margin: -2.54cm -2.00cm;
+  padding: 40mm 30mm;
+  page-break-after: always;
+}
+.doc-num-label {
+  font-size: 8pt; letter-spacing: 0.2em; color: #9A9490;
+  text-transform: uppercase; margin-bottom: 8pt;
+}
+.doc-main-title { font-size: 20pt; font-weight: 700; color: #E8E2D9; margin-bottom: 8pt; }
+.doc-main-sub { font-size: 11.5pt; font-style: italic; color: #9A9490; line-height: 1.5; }
+.doc-divider-rule {
+  width: 60mm; height: 0.5pt; background: rgba(232,226,217,0.25); margin: 14pt auto;
+}
+
+/* ════════════════════════════════════════════════════
+   DOCUMENT CONTROL BOX
+════════════════════════════════════════════════════ */
+.doc-control {
+  border: 0.5pt solid #bcc8d8; padding: 8pt 12pt;
+  margin-top: 14pt; background: #f8f9fc;
+}
+.doc-control-title {
+  font-size: 11pt; font-weight: 700; color: #003366;
+  margin-bottom: 4pt; border-bottom: 0.5pt solid #bcc8d8; padding-bottom: 3pt;
+}
+
+/* ════════════════════════════════════════════════════
+   CLOSING BOX
+════════════════════════════════════════════════════ */
+.closing-box {
+  background: #0D1B2A; padding: 14pt 18pt; margin: 12pt 0;
+}
+.closing-box p { color: #c0bab5; font-style: italic; line-height: 1.5; text-align: justify; }
+.closing-sig { color: #E8E2D9 !important; font-weight: 700 !important; font-style: normal !important; margin-top: 8pt !important; }
+
+/* ════════════════════════════════════════════════════
+   TAGS
+════════════════════════════════════════════════════ */
+.tag-asp {
+  display: inline-block; background: #e08000; color: #fff;
+  font-size: 7.5pt; font-weight: 700; padding: 1pt 5pt;
+  border-radius: 2pt; letter-spacing: 0.04em; vertical-align: middle; margin-left: 4pt;
+}
+
+/* ════════════════════════════════════════════════════
+   SECTION PAGE FLOW — NO forced break on every section.
+   Only key structural breaks applied manually.
+════════════════════════════════════════════════════ */
+.pb-before { page-break-before: always; }
+.pb-avoid  { page-break-inside: avoid; }
+
+/* ════════════════════════════════════════════════════
+   PRINT
+════════════════════════════════════════════════════ */
+@media print {
+  .cover-page, .doc-divider-page { margin: -2.54cm -2.00cm; }
+  h1,h2,h3,h4 { page-break-after: avoid; }
+  table { page-break-inside: avoid; }
+  p { orphans: 3; widows: 3; }
+}
+
+/* ════════════════════════════════════════════════════
+   PARTNER LETTER INTRO STYLE
+════════════════════════════════════════════════════ */
+.doc-meta-line {
+  text-align: center; font-size: 10.5pt; color: #555;
+  font-style: italic; margin-bottom: 10pt; line-height: 1.5;
+}
+
+/* narrow col utility */
+.w20 { width: 20%; }
+.w30 { width: 30%; }
+.w35 { width: 35%; }
+.w40 { width: 40%; }
+.w50 { width: 50%; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     COVER PAGE
+══════════════════════════════════════════ -->
+<div class="cover-page">
+  <div class="cover-logo-area">
+    <svg viewBox="0 0 80 110" width="54" height="74" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,110 L32.5,0 L47.5,0 L15,110Z" fill="#E8E2D9"/>
+      <rect x="52" y="0" width="20" height="110" fill="#E8E2D9"/>
+      <rect x="0" y="47" width="52" height="10" fill="#E8E2D9"/>
+    </svg>
+    <div class="cover-brand-name">Amana Capital</div>
+    <div class="cover-brand-sub">East Africa</div>
+  </div>
+  <div class="cover-divider"></div>
+  <div class="cover-label">Board Pack &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; Confidential</div>
+  <div class="cover-title">BUILDING A DSE<br/>WEALTH ENGINE</div>
+  <div class="cover-subtitle">A Strategic Framework for Long‑Term Capital Growth<br/>on the Dar es Salaam Stock Exchange</div>
+  <div class="cover-divider"></div>
+  <div class="cover-meta">
+    Prepared by: <strong>Theophil Christian Malundi</strong><br/>
+    Chief Investment Officer &nbsp;|&nbsp; Amana Capital East Africa<br/>
+    June 2026
+  </div>
+  <div class="cover-confidential">Confidential &nbsp;·&nbsp; For Board Use Only</div>
+  <div class="cover-accent"></div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TABLE OF CONTENTS
+══════════════════════════════════════════ -->
+<div class="toc-page">
+  <div class="pg-header">
+    <span>Amana Capital East Africa – DSE Wealth Engine</span>
+    <span>June 2026</span>
+  </div>
+  <div class="toc-title">TABLE OF CONTENTS</div>
+
+  <div class="toc-entry toc-main"><span>1.&nbsp; Executive Summary</span><span class="toc-num">3</span></div>
+  <div class="toc-entry toc-main"><span>2.&nbsp; Understanding the Daily Market Report</span><span class="toc-num">3</span></div>
+  <div class="toc-entry toc-main"><span>3.&nbsp; The Five Core Investment Strategies</span><span class="toc-num">4</span></div>
+  <div class="toc-entry toc-sub"><span>3.1&nbsp; Shadow Market Making (Spread Capture)</span><span class="toc-num">4</span></div>
+  <div class="toc-entry toc-sub"><span>3.2&nbsp; Block Trade Discount &amp; Slow Bleed</span><span class="toc-num">5</span></div>
+  <div class="toc-entry toc-sub"><span>3.3&nbsp; Dividend Accumulation &amp; Volume Spikes</span><span class="toc-num">5</span></div>
+  <div class="toc-entry toc-sub"><span>3.4&nbsp; Bond‑to‑Equity Rotation Front‑Running</span><span class="toc-num">5</span></div>
+  <div class="toc-entry toc-sub"><span>3.5&nbsp; Government Bond Liquidity Bridge</span><span class="toc-num">6</span></div>
+  <div class="toc-entry toc-main"><span>4.&nbsp; The Legal Arsenal – Tanzania's Investment Laws</span><span class="toc-num">6</span></div>
+  <div class="toc-entry toc-main"><span>5.&nbsp; Risk Management – Non‑Negotiable Guardrails</span><span class="toc-num">7</span></div>
+  <div class="toc-entry toc-main"><span>6.&nbsp; The Weekly Operating Ritual</span><span class="toc-num">8</span></div>
+  <div class="toc-entry toc-main"><span>7.&nbsp; Implementation Roadmap</span><span class="toc-num">8</span></div>
+  <div class="toc-entry toc-main"><span>8.&nbsp; Appendices</span><span class="toc-num">9</span></div>
+  <div class="toc-entry toc-sub"><span>8.1&nbsp; Fee Structure &amp; Key Counters</span><span class="toc-num">9</span></div>
+  <div class="toc-entry toc-sub"><span>8.2&nbsp; Dividend Calendar (2026–2027)</span><span class="toc-num">9</span></div>
+  <div class="toc-entry toc-sub"><span>8.3&nbsp; Legal Quick‑Reference Matrix</span><span class="toc-num">10</span></div>
+  <hr style="margin:8pt 0;"/>
+  <div class="toc-entry toc-main" style="margin-top:5pt;"><span><strong>Document 1:</strong>&nbsp; The DSE Wealth Engine – A Business Partner's Guide</span><span class="toc-num">11</span></div>
+  <div class="toc-entry toc-main"><span><strong>Document 2:</strong>&nbsp; Tanzanian Investment Laws – A Practical Guide</span><span class="toc-num">20</span></div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 – EXECUTIVE SUMMARY
+══════════════════════════════════════════ -->
+<div class="pg-header pb-before">
+  <span>Amana Capital East Africa – DSE Wealth Engine</span><span>June 2026</span>
+</div>
+<div class="sec-banner"><h1>1. EXECUTIVE SUMMARY</h1></div>
+
+<p>This document presents a comprehensive, law‑backed investment framework designed to systematically generate wealth on the Dar es Salaam Stock Exchange (DSE). The core philosophy rejects speculation; instead, it captures three permanent structural advantages unique to the Tanzanian market:</p>
+<ul>
+  <li><strong>Zero capital gains tax</strong> on listed securities.</li>
+  <li><strong>5% withholding tax on dividends</strong> (versus 10% for unlisted companies).</li>
+  <li><strong>Tax‑free interest</strong> on government bonds of ≥3 years and listed corporate bonds.</li>
+</ul>
+<p>The DSE is a frontier market where 98% of participants are retail price‑takers. By acting as a disciplined liquidity provider through our proprietary "Shadow Market Making" strategy, and by layering in dividend‑capture, bond‑rotation, and legal‑arbitrage techniques, a starting capital of TZS 5,000,000 with monthly top‑ups of TZS 500,000 can realistically compound to over <strong>TZS 500 million within 6–8 years</strong>. This Board Pack is divided into two complementary parts: a practical strategy guide (Sections 2–3, 5–7) and a detailed legal reference (Section 4). Together, they form the complete operating manual for the Amana Capital East Africa investment engine.</p>
+<div class="key-box"><strong>Core Thesis:</strong> Structural tax advantages + disciplined liquidity provision + systematic reinvestment = a compounding engine that retail participants cannot replicate.</div>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 – DAILY MARKET REPORT
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:12pt;"><h1>2. UNDERSTANDING THE DAILY MARKET REPORT</h1></div>
+<p>The DSE daily market report (<em>dse.co.tz</em>) is our primary intelligence feed. The following metrics are monitored daily:</p>
+<table>
+  <thead><tr><th class="w30">Metric</th><th class="w35">Interpretation</th><th>Action Threshold</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Total Turnover (TZS)</strong></td><td>Liquidity gauge for the session</td><td>&gt;TZS 3 bn = active;&nbsp; &lt;TZS 500 m = stand aside</td></tr>
+    <tr><td><strong>Deals &amp; Volume</strong></td><td>Distinguishes retail flow from institutional activity</td><td>High deals + low volume = retail; low deals + high volume = institutional</td></tr>
+    <tr><td><strong>VWAP (per counter)</strong></td><td>Session's fair value; all orders anchored here</td><td>Buy below; sell above — always</td></tr>
+    <tr><td><strong>Foreign Investor Flow</strong></td><td>Net selling (30–60%) = forced exits &amp; entry points</td><td>Declining foreign selling signals handoff to local buyers</td></tr>
+    <tr><td><strong>Bond Turnover</strong></td><td>Lead indicator for pension‑fund rotation</td><td>Spike then collapse precedes move into equities</td></tr>
+  </tbody>
+</table>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 – FIVE CORE STRATEGIES
+══════════════════════════════════════════ -->
+<div class="sec-banner pb-before" style="margin-top:0;"><h1>3. THE FIVE CORE INVESTMENT STRATEGIES</h1></div>
+
+<div class="strat-hdr"><h3>3.1 &nbsp;Shadow Market Making (Spread Capture)</h3></div>
+<p>We provide two‑sided liquidity by placing GTC limit orders below the best bid and above the best ask. The spread must exceed the round‑trip fee (~2.0–2.4%). T+2 settlement means cycles last 2–5 days. Position size is capped at ≤ 5% of a counter's 20‑day average daily volume. Primary counters: <strong>CRDB, VODA, DCB, NMB</strong>.</p>
+<ul>
+  <li>Place GTC limit buy order <em>below</em> best bid; GTC limit sell order <em>above</em> best ask.</li>
+  <li>Required gross spread: ≥ 2.4% to ensure net profit after all fees.</li>
+  <li>Settlement cycle: T+2; full cycle duration 2–5 trading days.</li>
+</ul>
+<p><strong>Live Reference Levels — 12 June 2026:</strong></p>
+<table>
+  <thead><tr><th>Counter</th><th>VWAP (TZS)</th><th>Buy Limit</th><th>Sell Limit</th><th>Gross Spread</th></tr></thead>
+  <tbody>
+    <tr><td>CRDB</td><td>2,650</td><td>2,630</td><td>2,760</td><td>4.9%</td></tr>
+    <tr><td>VODA</td><td>740</td><td>725</td><td>775</td><td>6.9%</td></tr>
+    <tr><td>DCB</td><td>535</td><td>515</td><td>555</td><td>7.8%</td></tr>
+    <tr><td>NMB</td><td>14,940</td><td>14,800</td><td>15,400</td><td>4.1%</td></tr>
+  </tbody>
+</table>
+
+<div class="strat-hdr"><h3>3.2 &nbsp;Block Trade Discount &amp; Slow Bleed <span class="tag-asp">Aspirational</span></h3></div>
+<p><em>Activates at portfolio &gt; TZS 5 million.</em> When a large foreign fund wants to exit a massive position, they use the DSE block trade market (off‑market, single buyer/seller). We negotiate purchases at a 5–8% discount to VWAP through broker relationships (Orbit, Vertex, or Zan Securities), then gradually resell into daily retail flow over 10–15 sessions. The discount is our profit; the slow bleed protects the market price.</p>
+
+<div class="strat-hdr"><h3>3.3 &nbsp;Dividend Accumulation &amp; Volume Spikes</h3></div>
+<p>Accumulate high‑yield stocks (TCC, TBL, NMB, CRDB, TPCC, VODA) <strong>4–6 weeks before the ex‑dividend date</strong>. The market reliably rallies pre‑announcement; sell half into the volume surge (capturing a tax‑free capital gain), then hold the remaining half through the ex‑date and collect the 5%‑taxed dividend. Reinvest all proceeds.</p>
+<table>
+  <thead><tr><th>Counter</th><th>Est. Yield</th><th>Approx. Announcement</th><th>Approx. Ex‑Dividend</th></tr></thead>
+  <tbody>
+    <tr><td>TCC</td><td>7–8%</td><td>August / December</td><td>September / January</td></tr>
+    <tr><td>TBL</td><td>7–8%</td><td>April–May</td><td>Mid‑May</td></tr>
+    <tr><td>NMB</td><td>~4%</td><td>June (AGM)</td><td>Late June</td></tr>
+    <tr><td>CRDB</td><td>~3%</td><td>April–May</td><td>Early May</td></tr>
+    <tr><td>VODA</td><td>3–4%</td><td>July–August</td><td>Mid‑August</td></tr>
+    <tr><td>TPCC</td><td>~4%</td><td>Varies</td><td>Varies</td></tr>
+  </tbody>
+</table>
+
+<div class="strat-hdr"><h3>3.4 &nbsp;Bond‑to‑Equity Rotation Front‑Running</h3></div>
+<p>Tanzania's pension funds park contributions in government bonds, then rotate into high‑dividend equities when bond yields compress. Monitor the daily DSE report: bond turnover surges (&gt;TZS 20 bn/day) → pension money flowing into bonds; bond turnover collapses (&lt;TZS 5 bn) → rotation into equities beginning. We buy <strong>CRDB, NMB, and TPCC</strong> when bond turnover is falling and equity turnover is still subdued, then sell into the equity surge.</p>
+<div class="key-box"><strong>Recent Signal (June 2026):</strong> Bond turnover collapsed from TZS 40 billion to under TZS 1 billion in a single week — the clearest rotation signal of the year. Positions were established at the lows.</div>
+
+<div class="strat-hdr"><h3>3.5 &nbsp;Government Bond Liquidity Bridge</h3></div>
+<p>Idle cash earns nothing. We park residual capital in <strong>UTT AMIS Liquid Fund</strong> (min. TZS 100,000; USSD withdraw up to TZS 2 m via *150*82#) or the <strong>UTT AMIS Bond Fund</strong>. Once the portfolio exceeds TZS 5 million, we purchase individual 15–25 year government bonds at BOT auction (min. TZS 1 million), collecting tax‑free semi‑annual coupons of 10–16%, ensuring zero cash drag at all times.</p>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 4 – LEGAL ARSENAL
+══════════════════════════════════════════ -->
+<div class="pg-header pb-before">
+  <span>Amana Capital East Africa – DSE Wealth Engine</span><span>June 2026</span>
+</div>
+<div class="sec-banner"><h1>4. THE LEGAL ARSENAL – TANZANIA'S INVESTMENT LAWS</h1></div>
+<p>Every statutory provision below is a deliberate policy incentive to encourage capital market participation. None constitute evasion. The table is the master reference; the law cards below it provide detail for each provision.</p>
+
+<table>
+  <thead>
+    <tr><th class="w30">Law / Regulation</th><th class="w35">Provision</th><th>Our Exploitation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Income Tax Act, Ch.332 (CMSA guidance)</td><td>0% capital gains tax on listed securities</td><td>Every spread‑capture, block‑trade, and rights‑issue profit is tax‑free</td></tr>
+    <tr><td>Income Tax Act, Ch.332</td><td>5% final WHT on listed dividends (vs. 10% unlisted)</td><td>Accumulate high‑yield counters; compounding advantage over private holdings</td></tr>
+    <tr><td>Finance Act 2021</td><td>Interest on govt. bonds ≥3‑yr maturity exempt from WHT</td><td>Hold 5–25‑yr bonds; receive 10–16% coupon entirely tax‑free</td></tr>
+    <tr><td>Finance Act 2022</td><td>Interest on listed corporate bonds &amp; Sukuk exempt from WHT</td><td>CRDB Kijani Bond, NMB Jamii Bond, EFTA Bond — all pay gross returns</td></tr>
+    <tr><td>DSE Trading Rules (Jun 2025)</td><td>+5% daily price band for 5 days post‑corporate action</td><td>Pre‑position before AGMs; sell into expanded range (e.g., NMB +10%)</td></tr>
+    <tr><td>DSE Trading Rules (Jun 2025)</td><td>Closing price = VWAP</td><td>Execute genuine sell orders in final 30 min to marginally lift closing VWAP</td></tr>
+    <tr><td>Companies Act / CMSA regulations</td><td>Rights issues at deep discount to market price</td><td>Hold cash buffer; subscribe to rights (e.g., MCB @ TZS 110 vs. market TZS 1,200+)</td></tr>
+    <tr><td>DSE Block Trade Rules</td><td>Pre‑arranged trades ≥TZS 250 m reported T+1</td><td>Broker relationships provide early flow intelligence (transaction info, not inside info)</td></tr>
+    <tr><td>CMSA directive (Jun 2025)</td><td>NIDA mandatory for CDS accounts</td><td>NIDA backlogs thin retail participation — accumulate when new‑account growth stalls</td></tr>
+    <tr><td>DSE Listing Rules</td><td>ETF price must not deviate &gt;5% from NAV</td><td>Buy iTrust/Vertex ETF when &gt;3% below NAV; sell at premium</td></tr>
+    <tr><td>Income Tax Act incentives</td><td>Newly listed companies: 25% CIT for 3 years (vs. 30%)</td><td>Subscribe to fundamentally sound IPOs; benefit from boosted post‑tax earnings</td></tr>
+  </tbody>
+</table>
+
+<div class="legal-box"><strong>Disclaimer:</strong> All provisions are enacted Tanzanian law as at June 2026. They do not constitute tax evasion or market manipulation. Always consult a qualified legal and tax professional before implementation.</div>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 5 – RISK MANAGEMENT
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:12pt;"><h1>5. RISK MANAGEMENT – NON‑NEGOTIABLE GUARDRAILS</h1></div>
+<table>
+  <thead><tr><th class="w20">Rule</th><th class="w50">Guardrail</th><th>Rationale</th></tr></thead>
+  <tbody>
+    <tr><td><strong>R‑1</strong></td><td>Limit orders <em>only</em> — never use market orders</td><td>Market orders in thin frontier markets cost 2–5% in slippage instantly</td></tr>
+    <tr><td><strong>R‑2</strong></td><td>Single‑counter concentration ≤ 60% of portfolio</td><td>Concentration risk — even CRDB is subject to this cap</td></tr>
+    <tr><td><strong>R‑3</strong></td><td>Minimum 20–30% cash / bond buffer at all times</td><td>Dry powder for distressed buying; buffer against forced selling</td></tr>
+    <tr><td><strong>R‑4</strong></td><td>Liquidity filter: ≥5,000 shares/day only</td><td>Illiquid counters trap capital; impossible to exit without market impact</td></tr>
+    <tr><td><strong>R‑5</strong></td><td>Track all returns in USD, not nominal TZS</td><td>Accounts for Shilling depreciation; measures real wealth growth</td></tr>
+    <tr><td><strong>R‑6</strong></td><td>100% profit reinvestment until target reached</td><td>Withdrawals reset the compounding clock — this is non‑negotiable</td></tr>
+  </tbody>
+</table>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 6 – WEEKLY OPERATING RITUAL
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:10pt;"><h1>6. THE WEEKLY OPERATING RITUAL</h1></div>
+<table>
+  <thead><tr><th class="w20">Cadence</th><th>Action</th><th class="w30">Time Required</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Daily</strong></td>
+      <td>Download DSE report. Log CRDB, VODA, NMB, DCB: closing price, VWAP, turnover. Record foreign buy/sell % and government bond turnover in a spreadsheet.</td>
+      <td>10 minutes</td>
+    </tr>
+    <tr>
+      <td><strong>Weekly (Sunday)</strong></td>
+      <td>Review all open GTC orders. Adjust buy limit upward if market has established a higher floor; adjust sell limit in strong uptrend. Read DSE corporate announcements (AGM notices, dividend proposals, rights issues).</td>
+      <td>20 minutes</td>
+    </tr>
+    <tr>
+      <td><strong>Monthly</strong></td>
+      <td>Deposit committed top‑up (minimum TZS 250,000). Allocate: 50% equities (shadow MM orders) · 30% bonds/Liquid Fund · 20% tactical opportunities.</td>
+      <td>30 minutes</td>
+    </tr>
+    <tr>
+      <td><strong>Quarterly</strong></td>
+      <td>Full portfolio rebalance. Trim any counter exceeding 60%. Rebuild cash buffer if below 20%. Update the three‑month dividend calendar and plan accumulation schedule.</td>
+      <td>1–2 hours</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 7 – IMPLEMENTATION ROADMAP
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:10pt;"><h1>7. IMPLEMENTATION ROADMAP</h1></div>
+<table>
+  <thead><tr><th class="w20">Phase</th><th class="w20">Timeline</th><th>Key Actions &amp; Milestones</th></tr></thead>
+  <tbody>
+    <tr class="row-hl"><td><strong>I — Foundation</strong></td><td>Month 1</td><td>Open CDS account (Hisa Kiganjani / licensed broker); place first shadow MM cycle on CRDB; open UTT AMIS Liquid Fund with residual cash.</td></tr>
+    <tr><td><strong>II — Scaling</strong></td><td>Months 2–6</td><td>Re‑enter spread cycles systematically; deepen broker relationship; add DCB and VODA as second/third engines. Begin monthly top‑up discipline.</td></tr>
+    <tr><td><strong>III — Event Integration</strong></td><td>Months 6–12</td><td>Participate in first full dividend season (TCC, TBL, NMB). Monitor rights issues. Initiate first government bond purchase via BOT auction.</td></tr>
+    <tr><td><strong>IV — Institutional</strong></td><td>Year 2+</td><td>Portfolio exceeds TZS 5 m: activate block‑trade strategy. Formalise partnership structure. Expand into 15–25 yr bonds with direct BOT participation.</td></tr>
+  </tbody>
+</table>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 8 – APPENDICES
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:10pt;"><h1>8. APPENDICES</h1></div>
+
+<div class="app-hdr"><h3>8.1 &nbsp;Fee Structure &amp; Key Counters</h3></div>
+<table style="width:48%; display:inline-table; margin-right:2%;">
+  <thead><tr><th>DSE Fee Component</th><th>Rate (per side)</th></tr></thead>
+  <tbody>
+    <tr><td>Brokerage</td><td>0.50–0.80%</td></tr>
+    <tr><td>DSE Levy</td><td>0.14%</td></tr>
+    <tr><td>CMSA Levy</td><td>0.14%</td></tr>
+    <tr><td>CDS Fee</td><td>0.06%</td></tr>
+    <tr class="row-hl"><td><strong>Total Round‑Trip</strong></td><td><strong>~2.0–2.4%</strong></td></tr>
+  </tbody>
+</table>
+<table style="width:49%; display:inline-table;">
+  <thead><tr><th>Ticker</th><th>Company</th><th>Role</th></tr></thead>
+  <tbody>
+    <tr><td>CRDB</td><td>CRDB Bank</td><td>Primary MM engine</td></tr>
+    <tr><td>VODA</td><td>Vodacom Tanzania</td><td>Secondary engine; dividend play</td></tr>
+    <tr><td>DCB</td><td>DCB Commercial Bank</td><td>Low‑price spread capture</td></tr>
+    <tr><td>NMB</td><td>NMB Bank</td><td>Dividend &amp; corporate action</td></tr>
+    <tr><td>TBL</td><td>Tanzania Breweries</td><td>High‑yield dividend</td></tr>
+    <tr><td>TCC</td><td>Tanzania Cigarette</td><td>Highest yield on board</td></tr>
+    <tr><td>TPCC</td><td>Twiga Cement</td><td>Bond‑rotation beneficiary</td></tr>
+  </tbody>
+</table>
+
+<div class="app-hdr"><h3>8.2 &nbsp;Dividend Calendar (2026–2027)</h3></div>
+<table>
+  <thead><tr><th>Counter</th><th>Approx. Announcement</th><th>Approx. Ex‑Dividend</th><th>Est. Yield</th><th>Strategy</th></tr></thead>
+  <tbody>
+    <tr><td>CRDB</td><td>April–May</td><td>Early May</td><td>~3%</td><td>Accumulate March; sell 50% on announcement spike</td></tr>
+    <tr><td>NMB</td><td>June (AGM)</td><td>Late June</td><td>~4%</td><td>Accumulate May; 10% band active 5 days post‑AGM</td></tr>
+    <tr><td>TBL</td><td>April–May</td><td>Mid‑May</td><td>7–8%</td><td>Accumulate March–April; highest cash yield</td></tr>
+    <tr><td>VODA</td><td>July–August</td><td>Mid‑August</td><td>3–4%</td><td>Accumulate June–July; foreign flow watchpoint</td></tr>
+    <tr><td>TCC</td><td>August / December</td><td>September / January</td><td>7–8%</td><td>Two‑cycle counter; highest annual yield</td></tr>
+    <tr><td>TPCC</td><td>Varies</td><td>Varies</td><td>~4%</td><td>Monitor AGM notices; bond‑rotation alignment</td></tr>
+  </tbody>
+</table>
+
+<div class="app-hdr"><h3>8.3 &nbsp;Legal Quick‑Reference Matrix</h3></div>
+<table>
+  <thead><tr><th>#</th><th>Provision</th><th>Legal Basis</th><th>Tax Rate</th><th>Scope</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Capital Gains Exemption</td><td>Income Tax Act, Ch.332</td><td><strong>0%</strong></td><td>All listed DSE securities</td></tr>
+    <tr><td>2</td><td>Listed Dividend WHT</td><td>Income Tax Act, Ch.332</td><td><strong>5%</strong></td><td>DSE‑listed equity dividends</td></tr>
+    <tr><td>3</td><td>Govt Bond Interest Exemption</td><td>Finance Act 2021</td><td><strong>0%</strong></td><td>DSE‑listed bonds, maturity ≥3 years</td></tr>
+    <tr><td>4</td><td>Corporate Bond WHT Exemption</td><td>Finance Act 2022</td><td><strong>0%</strong></td><td>Listed corporate bonds, municipal bonds, Sukuk</td></tr>
+    <tr><td>5</td><td>Price‑Band Expansion</td><td>DSE Trading Rules, Jun 2025</td><td>N/A</td><td>5 working days post‑corporate action</td></tr>
+    <tr><td>6</td><td>VWAP Closing Price</td><td>DSE Trading Rules, Jun 2025</td><td>N/A</td><td>Sessions with ≥100 shares traded</td></tr>
+    <tr><td>7</td><td>Rights Issue Discounts</td><td>Companies Act / CMSA</td><td>0% CGT on resale</td><td>Existing shareholders on record date</td></tr>
+    <tr><td>8</td><td>Block Trade Reporting</td><td>DSE Block Trade Rules</td><td>0% CGT</td><td>Single trades ≥TZS 250 million</td></tr>
+    <tr><td>9</td><td>New Listing CIT Reduction</td><td>Income Tax Act</td><td><strong>25% CIT</strong></td><td>Newly listed companies (≥25% float) for 3 years</td></tr>
+    <tr><td>10</td><td>ETF NAV Deviation Rule</td><td>DSE Listing Rules</td><td>0% CGT on gains</td><td>iTrust, Vertex ETFs; max ±5% from NAV</td></tr>
+  </tbody>
+</table>
+
+<div class="doc-control">
+  <div class="doc-control-title">Document Control</div>
+  <p><strong>Version:</strong> 1.0 &nbsp;|&nbsp; <strong>Date:</strong> June 2026 &nbsp;|&nbsp; <strong>Classification:</strong> Confidential – Board Use Only</p>
+  <p style="margin-top:3pt;"><strong>Prepared by:</strong> Theophil Christian Malundi, Chief Investment Officer, Amana Capital East Africa. All information based on publicly available DSE data and current Tanzanian legislation. This document does not constitute legal or tax advice.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     DOCUMENT 1 DIVIDER PAGE
+══════════════════════════════════════════════════════ -->
+<div class="doc-divider-page">
+  <svg viewBox="0 0 80 110" width="48" height="66" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,110 L32.5,0 L47.5,0 L15,110Z" fill="#E8E2D9"/>
+    <rect x="52" y="0" width="20" height="110" fill="#E8E2D9"/>
+    <rect x="0" y="47" width="52" height="10" fill="#E8E2D9"/>
+  </svg>
+  <div class="doc-divider-rule" style="margin-top:12pt;"></div>
+  <div class="doc-num-label">Document 1 of 2</div>
+  <div class="doc-main-title">THE DSE WEALTH ENGINE</div>
+  <div class="doc-main-sub">A Business Partner's Guide to Making Money<br/>on the Dar es Salaam Stock Exchange</div>
+  <div class="doc-divider-rule"></div>
+  <div style="font-size:10pt; color:#9A9490; margin-top:8pt; font-style:italic;">Prepared by Theophil Christian Malundi · Investment Analyst · June 2026</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 1: EXECUTIVE SUMMARY
+══════════════════════════════════════════ -->
+<div class="pg-header">
+  <span>Amana Capital East Africa – DSE Wealth Engine</span><span>June 2026</span>
+</div>
+<div class="sec-banner"><h1>1. EXECUTIVE SUMMARY</h1></div>
+
+<p>Dear Partner,</p>
+<p>You don't need to be a professional trader to build serious wealth on the Dar es Salaam Stock Exchange. You only need to understand a few permanent, structural truths about this market, and then apply a systematic set of strategies with discipline. The DSE gives you three advantages that most markets in the world do not:</p>
+<ul>
+  <li><strong>Zero capital gains tax.</strong> Every shilling of profit you make from selling listed shares is yours. You pay no tax on it.</li>
+  <li><strong>5% withholding tax on dividends</strong> from listed companies. If you owned the same company privately, you'd pay 10%. That's a permanent, compounding edge.</li>
+  <li><strong>Zero withholding tax on government bond interest</strong> for bonds with a maturity of three years or longer. You can earn 10–16% interest completely tax‑free.</li>
+</ul>
+<p>On top of that, the DSE is a frontier market. About 98% of investors are small retail traders who buy and sell at market prices. The order book is thin. Spreads are wide. There are no professional market makers to compete with you. This means a disciplined person can systematically earn the bid‑ask spread simply by providing liquidity and being patient. This guide will teach you exactly how to do that, along with four other complementary strategies, using the <strong>Hisa Kiganjani</strong> mobile app and a licensed stockbroker.</p>
+<div class="key-box">With a starting capital of <strong>TZS 1–5 million</strong> and a monthly top‑up of <strong>TZS 250,000–500,000</strong>, the math says you can reach <strong>TZS 500 million in 6–8 years</strong> and <strong>TZS 1 billion in 8–10 years</strong>. There is no magic. There is no day‑trading. There is a machine — and I'm about to show you how to build it.</div>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 2: MARKET REPORT
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:12pt;"><h1>2. UNDERSTANDING THE DAILY MARKET REPORT</h1></div>
+<p>Every evening the DSE publishes a daily market report at <em>dse.co.tz</em>. Spend five minutes reading it. Here is what each section tells you.</p>
+
+<h2>2.1 The Headline Numbers</h2>
+<p><strong>Total Turnover (TZS):</strong> How much money changed hands. Above TZS 3 billion = market is active, trade comfortably. Below TZS 500 million = quiet day — don't force trades.</p>
+<p><strong>Deals:</strong> Number of individual transactions. High count (2,000+) = many small traders active. Low count = institutional hands are moving.</p>
+<p><strong>Volume (shares):</strong> Combined with the deal count, this tells you whether flow is retail or institutional in origin.</p>
+
+<h2>2.2 The Counter‑by‑Counter Table</h2>
+<p>For each stock, the report shows Opening / Closing / High / Low prices, the <strong>VWAP</strong> (the most important number — average price weighted by volume, representing the session's "fair value"), total turnover and volume, and outstanding bids/offers at the close. We only trade counters with volume &gt;5,000 shares/day. We anchor all buy and sell decisions to the VWAP.</p>
+
+<h2>2.3 Foreign Investor Flow</h2>
+<p><strong>High foreign selling (30–60% of turnover):</strong> Forced exits by foreign funds — short‑term price dips are our buying opportunities. <strong>Low foreign selling / rising foreign buying:</strong> Selling is exhausting, local bid is absorbing it — this is the setup for a rally.</p>
+
+<h2>2.4 Bond Market Turnover</h2>
+<p>Bond turnover surging to TZS 20–40 bn/day = pension funds parking cash in fixed income. Collapsing below TZS 5 bn = that money is rotating into high‑dividend stocks (Strategy 4 signal).</p>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 3: FIVE STRATEGIES
+══════════════════════════════════════════ -->
+<div class="pg-header pb-before">
+  <span>Amana Capital East Africa – DSE Wealth Engine</span><span>June 2026</span>
+</div>
+<div class="sec-banner"><h1>3. THE FIVE CORE STRATEGIES</h1></div>
+
+<div class="strat-hdr"><h3>Strategy 1 – Shadow Market Making (Spread Capture)</h3></div>
+<h3>What It Is</h3>
+<p>You buy shares below the current market price and sell them above your purchase price — capturing the bid‑ask spread. Because 98% of DSE investors cross the spread at market prices, and there are no professional market makers, anyone who places patient limit orders on both sides earns a predictable return for providing liquidity.</p>
+
+<h3>How to Do It — Step by Step</h3>
+<ol>
+  <li><strong>Choose liquid counters.</strong> Minimum 5,000 shares/day with at least 50 deals. Primary engines: CRDB, VODA, DCB, NMB.</li>
+  <li><strong>Place a GTC limit buy order below the current best bid.</strong> Example: CRDB VWAP is 2,650; bid is 2,640. You place a buy at 2,630 and wait for a seller who needs immediate exit.</li>
+  <li><strong>Once filled, place a GTC limit sell order</strong> at a price covering round‑trip fees (2.0–2.4%) plus profit. For CRDB, sell at 2,760 — a 130‑shilling spread. Gross profit on 200 shares = TZS 26,000; net ≈ TZS 18,000–20,000.</li>
+  <li><strong>Never hold more than 5% of a counter's 20‑day average daily volume overnight.</strong> If CRDB trades 800,000 shares/day on average, your 200‑share position is trivially exitable.</li>
+  <li><strong>The T+2 rule.</strong> Shares settle 2 business days after purchase. You cannot sell on the same day. The cycle: buy → wait for settlement → sell → immediately reload with a new buy order (2–5 day cycle).</li>
+</ol>
+
+<h3>Live Reference Levels — 12 June 2026</h3>
+<table>
+  <thead><tr><th>Counter</th><th>VWAP (TZS)</th><th>Buy Order</th><th>Shares</th><th>Sell Order</th><th>Net Profit Est.</th></tr></thead>
+  <tbody>
+    <tr><td>CRDB</td><td>2,650</td><td>@ 2,630</td><td>200</td><td>@ 2,760</td><td>TZS 18,000–20,000</td></tr>
+    <tr><td>VODA</td><td>740</td><td>@ 725</td><td>100</td><td>@ 775</td><td>TZS 3,800–4,200</td></tr>
+    <tr><td>DCB</td><td>535</td><td>@ 515</td><td>100</td><td>@ 555</td><td>TZS 2,800–3,200</td></tr>
+    <tr><td>NMB</td><td>14,940</td><td>@ 14,800</td><td>5</td><td>@ 15,400</td><td>TZS 2,200–2,500</td></tr>
+  </tbody>
+</table>
+
+<div class="strat-hdr"><h3>Strategy 2 – Block Trade Discount &amp; Slow Bleed <span class="tag-asp">Aspirational – Portfolio &gt;TZS 5 m</span></h3></div>
+<p>When a large foreign fund wants to exit a massive position (e.g., TZS 2 billion of CRDB), they use the block trade market — a single off‑market negotiation at a discount. Through our broker relationship (Orbit, Vertex, or Zan Securities), we are called when a block is being arranged. We buy at a 5–8% discount to the day's VWAP, then sell gradually over 10–15 sessions into daily retail flow, never exceeding 5% of the day's volume. The discount is our profit. The slow bleed protects the market price. This is where serious frontier‑market money is made.</p>
+
+<div class="strat-hdr"><h3>Strategy 3 – Dividend Accumulation &amp; Volume Spikes</h3></div>
+<p>Tanzanian companies pay generous dividends taxed at only 5%. The market reliably rallies 4–6 weeks before the ex‑dividend date, then dips after payment. Our playbook: (1) Identify ex‑dividend dates for high‑yield counters. (2) Accumulate quietly, 4–6 weeks before ex‑date. (3) When the dividend is announced and volume surges, sell <em>half</em> the position into the frenzy — capturing a tax‑free capital gain. (4) Hold the remaining half through ex‑date, collect the 5%‑taxed dividend, and reinvest.</p>
+<p><strong>2026 Key Dates:</strong> CRDB ex‑dividend passed (5 May). NMB AGM held 10 June — ex‑date pending, 10% band active for 5 working days. VODA announcement expected July/August. TBL and TCC next cycles begin H2 2026.</p>
+
+<div class="strat-hdr"><h3>Strategy 4 – Bond‑to‑Equity Rotation Front‑Running</h3></div>
+<p>Tanzania's pension funds collect billions in quarterly contributions, parking them in government bonds first. When bond yields compress and bond turnover drops, they rotate into high‑dividend stocks. Signal: bond turnover surges (&gt;TZS 20 bn/day) → buy bonds; bond turnover collapses (&lt;TZS 5 bn) → buy CRDB, NMB, and TPCC. Sell into the equity surge when equity turnover explodes.</p>
+<div class="key-box"><strong>Recent Evidence:</strong> In early June 2026, bond turnover collapsed from TZS 40 billion to under TZS 1 billion in a single week. Foreigners were selling heavily. Locals absorbed it. That was the rotation signal. We positioned at the lows.</div>
+
+<div class="strat-hdr"><h3>Strategy 5 – Government Bond Liquidity Bridge</h3></div>
+<p>Cash that sits idle earns nothing. We park it in: (a) <strong>UTT AMIS Liquid Fund</strong> — minimum TZS 100,000, NAV grows daily, instant USSD withdrawal (*150*82#) up to TZS 2 m; (b) <strong>UTT AMIS Bond Fund</strong> — holds tax‑exempt government bonds, higher yield; (c) <strong>Direct 15–25 year government bonds</strong> at BOT auction (once portfolio &gt;TZS 5 m) — minimum TZS 1 million, collecting tax‑free 10–16% semi‑annual coupons to maturity.</p>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 4: LEGAL ARSENAL
+══════════════════════════════════════════ -->
+<div class="pg-header pb-before">
+  <span>Amana Capital East Africa – DSE Wealth Engine</span><span>June 2026</span>
+</div>
+<div class="sec-banner"><h1>4. THE LEGAL ARSENAL – HOW TANZANIAN LAW GIVES YOU AN EDGE</h1></div>
+<p>Many of the strategies above work because of specific enacted laws. Knowing them by name turns a good trader into an untouchable one.</p>
+
+<div class="law-card">
+  <div class="law-card-title">1 — Zero Capital Gains Tax on Listed Securities</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal basis</td><td>Income Tax Act, Chapter 332 (CMSA guidance)</td></tr>
+      <tr><td class="law-label">The rule</td><td>Profits from selling DSE‑listed shares are 100% exempt from capital gains tax. Unlisted securities are taxed at 10%.</td></tr>
+      <tr><td class="law-label">Exploitation</td><td>Every spread‑capture profit, block‑trade gain, and rights‑issue flip is tax‑free. Keep all contract notes and CDS statements.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Exemption is lost if the company delists. Always verify listing status.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">2 — 5% Withholding Tax on Listed Dividends</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal basis</td><td>Income Tax Act, Chapter 332, as amended</td></tr>
+      <tr><td class="law-label">The rule</td><td>Dividends from DSE‑listed companies: final WHT of 5%. Unlisted: 10% (resident) or 10–15% (non‑resident).</td></tr>
+      <tr><td class="law-label">Exploitation</td><td>TCC dividend of TZS 1,050 nets TZS 997.50 listed vs. TZS 945 unlisted. Over decades, this 5‑point difference is enormous.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>You must be on the share register on the record date — verify CDS reflects the holding.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">3 — Tax‑Free Government Bond Interest (3+ Years) — Finance Act 2021</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">The rule</td><td>Interest on DSE‑listed government bonds with maturity ≥3 years: 0% WHT. Short‑term T‑bills remain subject to 10% WHT.</td></tr>
+      <tr><td class="law-label">Exploitation</td><td>A 15‑year bond paying 14% delivers exactly 14% after tax. Secondary‑market capital gains also attract 0% CGT.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Bond must be listed on the DSE. Verify maturity and listing status before purchase.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">4 — Tax‑Free Corporate Bond &amp; Sukuk Interest — Finance Act 2022</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">The rule</td><td>Interest / profit distribution from DSE‑listed corporate bonds, municipal bonds, and Sukuk: 0% WHT.</td></tr>
+      <tr><td class="law-label">Exploitation</td><td>NMB Jamii Bond, CRDB Kijani Bond, KCB Mapato Sukuk, EFTA Bond — all pay gross. A 14% EFTA bond delivers 14% after tax vs. 12.6% if unlisted.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Confirm listing status with your broker before purchase.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">5 — Corporate Action Price‑Band Expansion — DSE Trading Rules, June 2025</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">The rule</td><td>Daily price‑variation cap expanded by an additional 5% for five working days after a corporate action (dividend announcement, rights issue, merger).</td></tr>
+      <tr><td class="law-label">Exploitation</td><td>Pre‑position 2–3 weeks before AGM. On announcement day, place limit sell at or near the expanded band — retail momentum often drives the price there.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Expanded band only applies to formally announced corporate actions. Trading on rumour alone is risky.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">6 — VWAP Closing Price &nbsp;|&nbsp; 7 — Rights‑Issue Discount Arbitrage &nbsp;|&nbsp; 8 — Block Trade Intelligence</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">VWAP (Rule 6)</td><td>Closing price = VWAP since June 2025. Execute genuine sell orders in the final 30 minutes to marginally lift the closing VWAP — every order must be a real, capital‑backed trade (never manipulative).</td></tr>
+      <tr><td class="law-label">Rights Issues (Rule 7)</td><td>Existing shareholders can subscribe to new shares at deep discount. Maintain TZS 200,000–500,000 cash reserve. Example: MCB rights May 2026 at TZS 110 vs. market TZS 1,200+. Must be on register on the record date.</td></tr>
+      <tr><td class="law-label">Block Trades (Rule 8)</td><td>Block trades (≥TZS 250 m) are negotiated off‑market and reported T+1. Broker relationships provide early market‑flow intelligence — this is transaction information, not corporate inside information.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">9 — NIDA Friction &nbsp;|&nbsp; 10 — ETF Price‑Deviation Arbitrage &nbsp;|&nbsp; 11 — Reduced CIT for New Listings</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">NIDA (Rule 9)</td><td>CMSA Jun 2025 directive: NIDA mandatory for CDS accounts. NIDA backlogs temporarily thin retail participation — monitor CMSA statistical bulletins and accumulate when new‑account growth stalls; sell into resumed demand.</td></tr>
+      <tr><td class="law-label">ETF Arbitrage (Rule 10)</td><td>DSE listing rules: iTrust and Vertex ETF market price may not deviate &gt;5% from NAV. Buy when &gt;3% below NAV; avoid or sell when at premium. Patience required — discount can persist.</td></tr>
+      <tr><td class="law-label">IPO CIT (Rule 11)</td><td>Newly listed companies (≥25% public float) pay 25% CIT (vs. 30%) for 3 years. Identify sound IPO candidates; subscribe to benefit from boosted post‑tax earnings and dividends.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<p style="font-size:10pt; color:#555; font-style:italic; margin-top:6pt;">For a complete statutory breakdown, see Document 2: "Tanzanian Investment Laws – A Practical Guide."</p>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 5: RISK MANAGEMENT
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:12pt;"><h1>5. RISK MANAGEMENT – NON‑NEGOTIABLE RULES</h1></div>
+<ol>
+  <li><strong>Always use limit orders.</strong> Never place a market order. A market order in a thin frontier market can cost you 2–5% in slippage instantly.</li>
+  <li><strong>Never hold more than 60% of the portfolio in one counter.</strong> Even CRDB.</li>
+  <li><strong>Keep at least 20–30% of the portfolio in cash or government bonds.</strong> This is your buffer. It lets you buy when others are forced to sell.</li>
+  <li><strong>Never touch a stock that trades fewer than 5,000 shares a day.</strong> You can check in, but you can't check out.</li>
+  <li><strong>Calculate all returns in US dollars</strong> to account for the depreciation of the Tanzanian Shilling. Your real wealth must grow in hard currency terms.</li>
+  <li><strong>Reinvest every shilling of profit.</strong> Do not withdraw until you have reached your target. This is how compounding works.</li>
+</ol>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 6: WEEKLY RITUAL
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:10pt;"><h1>6. THE WEEKLY RITUAL</h1></div>
+<p>This is the routine that makes the machine work. It takes about 20 minutes a day.</p>
+<h2>Every Weekday Evening</h2>
+<ol>
+  <li>Download the DSE daily report from <em>dse.co.tz</em>.</li>
+  <li>Record in a spreadsheet: closing price &amp; VWAP of CRDB, VODA, NMB, DCB; total equity turnover; foreign buying % and selling %; government bond turnover.</li>
+</ol>
+<h2>Every Sunday</h2>
+<p>Review all open GTC orders. Adjust the buy limit upward if the market has established a higher floor; adjust the sell limit if the stock is in a strong uptrend. Read all DSE corporate announcements.</p>
+<h2>Every Month</h2>
+<p>Deposit your committed top‑up (minimum TZS 250,000). Allocate: <strong>50% equities</strong> (shadow market‑making orders) · <strong>30% bond/Liquid Fund buffer</strong> · <strong>20% tactical opportunities</strong>.</p>
+<h2>Every Quarter</h2>
+<p>Rebalance: trim any counter exceeding 60%. Rebuild cash buffer if below 20%. Review the dividend calendar for the next three months and plan your accumulation schedule.</p>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 7: HOW TO START
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:10pt;"><h1>7. HOW TO START TOMORROW</h1></div>
+<ol>
+  <li><strong>Open a CDS account.</strong> Via Hisa Kiganjani or a licensed broker (Orbit, Zan, Vertex). Bring your NIDA card.</li>
+  <li><strong>Deposit your starting capital.</strong> Even TZS 500,000 is enough to begin.</li>
+  <li><strong>Place your first shadow market‑making order:</strong> <em>BUY 200 CRDB @ TZS 2,630 GTC</em> → (once filled) <em>SELL 200 CRDB @ TZS 2,760 GTC</em>.</li>
+  <li><strong>Open a UTT AMIS Liquid Fund account</strong> with residual cash. Deposit at least TZS 100,000.</li>
+  <li><strong>Start the daily ritual.</strong> Download the report. Record the numbers. Let the orders work.</li>
+</ol>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 1 — SECTION 8: APPENDIX
+══════════════════════════════════════════ -->
+<div class="sec-banner" style="margin-top:10pt;"><h1>8. APPENDIX – QUICK REFERENCE CARDS</h1></div>
+
+<h2>DSE Fee Structure</h2>
+<table style="width:60%;">
+  <thead><tr><th>Component</th><th>Rate (per side)</th></tr></thead>
+  <tbody>
+    <tr><td>Brokerage</td><td>~0.5–0.8%</td></tr>
+    <tr><td>DSE Levy</td><td>0.14%</td></tr>
+    <tr><td>CMSA Levy</td><td>0.14%</td></tr>
+    <tr><td>CDS Fee</td><td>0.06%</td></tr>
+    <tr class="row-hl"><td><strong>Total Round‑Trip</strong></td><td><strong>~2.0–2.4%</strong></td></tr>
+  </tbody>
+</table>
+
+<h2 style="margin-top:8pt;">Key Counters &amp; Dividend Calendar (2026)</h2>
+<table>
+  <thead><tr><th>Ticker</th><th>Company</th><th>Role</th><th>Approx. Announcement</th><th>Approx. Ex‑Date</th></tr></thead>
+  <tbody>
+    <tr><td>CRDB</td><td>CRDB Bank</td><td>Primary shadow MM engine</td><td>April</td><td>Early May</td></tr>
+    <tr><td>NMB</td><td>NMB Bank</td><td>Dividend &amp; corporate action play</td><td>June (AGM)</td><td>Late June</td></tr>
+    <tr><td>TBL</td><td>Tanzania Breweries</td><td>High‑yield dividend</td><td>April/May</td><td>Mid‑May</td></tr>
+    <tr><td>VODA</td><td>Vodacom Tanzania</td><td>Secondary engine; dividend play</td><td>July</td><td>Mid‑August</td></tr>
+    <tr><td>DCB</td><td>DCB Commercial Bank</td><td>Low‑price spread capture</td><td>Varies</td><td>Varies</td></tr>
+    <tr><td>TCC</td><td>Tanzania Cigarette</td><td>Highest yield on the board</td><td>August / December</td><td>September / January</td></tr>
+    <tr><td>TPCC</td><td>Twiga Cement</td><td>Bond‑rotation beneficiary</td><td>Varies</td><td>Varies</td></tr>
+  </tbody>
+</table>
+
+<div class="closing-box">
+  <p>This is not a get‑rich‑quick scheme. It is a business. We are building a factory that systematically captures spreads, dividends, and institutional flows in a market that gives us permanent tax advantages. Every month, we add capital. Every quarter, we rebalance. Every year, we grow.</p>
+  <p style="margin-top:6pt;">The DSE's daily turnover — in all its erratic, concentrated, and evolving character — is our raw material. We don't guess. We don't chase. We place our orders, we let the market come to us, and we let time and compounding do the heavy lifting.</p>
+  <p class="closing-sig">Welcome to the wealth engine. Let's start it tomorrow.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     DOCUMENT 2 DIVIDER PAGE
+══════════════════════════════════════════════════════ -->
+<div class="doc-divider-page">
+  <svg viewBox="0 0 80 110" width="48" height="66" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,110 L32.5,0 L47.5,0 L15,110Z" fill="#E8E2D9"/>
+    <rect x="52" y="0" width="20" height="110" fill="#E8E2D9"/>
+    <rect x="0" y="47" width="52" height="10" fill="#E8E2D9"/>
+  </svg>
+  <div class="doc-divider-rule" style="margin-top:12pt;"></div>
+  <div class="doc-num-label">Document 2 of 2</div>
+  <div class="doc-main-title">TANZANIAN INVESTMENT LAWS</div>
+  <div class="doc-main-sub">A Practical Guide to Legal Advantages on the DSE</div>
+  <div class="doc-divider-rule"></div>
+  <div style="font-size:10pt; color:#9A9490; margin-top:8pt; font-style:italic;">Prepared by Theophil Christian Malundi · Investment Analyst · June 2026</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 2 — INTRODUCTION
+══════════════════════════════════════════ -->
+<div class="pg-header">
+  <span>Amana Capital East Africa – DSE Wealth Engine</span><span>June 2026</span>
+</div>
+<div class="sec-banner"><h1>INTRODUCTION</h1></div>
+<p>The Dar es Salaam Stock Exchange offers a set of legal and regulatory advantages that are unusually favourable to the individual investor. These are not loopholes — they are deliberate policy choices enshrined in Tanzanian law to encourage capital market participation. This guide lists each advantage, its legal basis, how to exploit it, and where the boundaries lie. Use it as your reference whenever you plan a trade or review your portfolio.</p>
+
+
+<!-- ══════════════════════════════════════════
+     DOC 2 — LAWS 1–4
+══════════════════════════════════════════ -->
+<div class="law-card" style="margin-top:8pt;">
+  <div class="law-card-title">1 &nbsp;|&nbsp; Zero Capital Gains Tax on Listed Securities</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>CMSA public guidance; consistent interpretation of the Income Tax Act, Chapter 332</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Profits from the sale of DSE‑listed shares are completely exempt from capital gains tax. Unlisted securities are taxed at 10%.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Every spread‑capture profit, block‑trade gain, and rights‑issue flip is tax‑free. Keep all contract notes and CDS statements as documentary evidence.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>The exemption is lost if the company delists. Always verify that a stock remains listed before relying on this treatment.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">2 &nbsp;|&nbsp; 5% Withholding Tax on Listed Dividends</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>Income Tax Act, Chapter 332, as amended</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Dividends from DSE‑listed companies: final WHT of 5%, irrespective of the shareholder's residency. Unlisted dividends: 10% (resident) or 10–15% (non‑resident).</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Accumulate high‑dividend counters and hold through the ex‑dividend date. A TCC dividend of TZS 1,050 nets TZS 997.50 listed vs. TZS 945 unlisted. Over decades, that 5‑point difference is enormous.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>You must be on the share register on the record date. Verify with your broker that your CDS account reflects the holding.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">3 &nbsp;|&nbsp; WHT Exemption on Government Bond Interest (≥3 Years) — Finance Act 2021</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>Finance Act, 2021 (amending the Income Tax Act)</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Interest on DSE‑listed government bonds with maturity ≥3 years is exempt from WHT. Short‑term T‑bills (35‑, 91‑, 182‑, 364‑day) remain subject to 10% WHT.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>When the Bank of Tanzania auctions a 15‑ or 20‑year bond at 11–16% coupon, you receive every shilling tax‑free, semi‑annually. Secondary‑market capital gains on these bonds are also 0% CGT.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Exemption applies only to bonds listed on the DSE. Verify maturity and listing status before purchase.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">4 &nbsp;|&nbsp; WHT Exemption on Listed Corporate Bonds &amp; Sukuk — Finance Act 2022</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>Finance Act, 2022 (amending the Income Tax Act)</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Interest or profit distribution from DSE‑listed corporate bonds, municipal bonds, and Sukuk is exempt from WHT.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>NMB Jamii Bond, CRDB Kijani Bond, KCB Mapato Sukuk, EFTA Bond — all pay gross. A 14% EFTA bond delivers 14% after tax vs. 12.6% if unlisted.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Exemption applies automatically once the bond is admitted to the DSE. Confirm listing status with your broker.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     DOC 2 — LAWS 5–8
+══════════════════════════════════════════ -->
+<div class="law-card pb-before">
+  <div class="law-card-title">5 &nbsp;|&nbsp; Corporate Action Price‑Band Expansion — DSE Trading Rules, June 2025</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>DSE Trading Rules, June 2025 amendments, approved by CMSA</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Daily price‑variation cap expanded by an additional 5% for five working days following a corporate action (dividend announcement, rights issue, merger). A large‑cap (normally 5%) can move 10%; a small‑cap (normally 15%) can move 20%.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Pre‑position 2–3 weeks before the AGM. On announcement day, place a limit sell order at or near the expanded band limit. After the five‑day window, the price frequently retraces — re‑enter at a lower price.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Expanded band applies only to formally announced corporate actions. Trading on rumour alone is risky and unprotected.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">6 &nbsp;|&nbsp; VWAP Closing‑Price Mechanics — DSE Trading Rules, June 2025</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>DSE Trading Rules, June 2025</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Official closing price = VWAP, provided ≥100 shares are traded in the session.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>In the final 30 minutes, execute a genuine sell order slightly above the developing VWAP. Your trade becomes part of the weighted average. Next morning, orders often cluster around the previous close, providing a slightly better opening.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Orders must be real, capital‑backed trades. Never place an order solely to manipulate the closing price.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">7 &nbsp;|&nbsp; Rights‑Issue Discount Arbitrage — Companies Act / CMSA</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>Companies Act and CMSA regulations on rights issues</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Existing shareholders can subscribe to new shares at a price often significantly below market value.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Maintain TZS 200,000–500,000 cash in CDS account. Buy minimum qualifying shares before the record date. Subscribe to the new shares at the discount, then sell once credited (or hold). Example: MCB May 2026 at TZS 110 vs. market TZS 1,200+.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>You must be a shareholder on the record date. Trading after the last day to trade cum‑rights entitles you to nothing.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">8 &nbsp;|&nbsp; Block Trade Information Advantage — DSE Block Trade Rules</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">Legal Basis</td><td>DSE Trading Rules (block trade: single buyer, single seller, minimum TZS 250 million)</td></tr>
+      <tr><td class="law-label">The Rule</td><td>Block trades are negotiated off‑market but reported to the market the following day.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Through active broker relationships, you may learn of a pending block trade before it prints — market‑flow intelligence, not inside information. Position accordingly (accumulate if a premium block is expected; offer to be the counterparty).</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Never act on information about an impending corporate event before it is public. Block‑trade flow is transaction information, not corporate inside information.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     DOC 2 — LAWS 9–12
+══════════════════════════════════════════ -->
+<div class="law-card">
+  <div class="law-card-title">9 &nbsp;|&nbsp; NIDA‑Verification Friction — CMSA Directive, June 2025</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">The Phenomenon</td><td>NIDA mandatory for CDS accounts (June 2025). During high‑backlog periods, new account openings slow — reducing retail participation and thinning the order book.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Monitor CMSA statistical bulletins. When new‑account growth stalls, accumulate at potentially better prices. When backlogs clear and accounts surge, sell into the renewed retail demand.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Macro‑observation strategy only. All data is publicly available from CMSA publications.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">10 &nbsp;|&nbsp; ETF Price‑Deviation Arbitrage — DSE Listing Rules</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">The Rule</td><td>iTrust EAC Large‑Cap ETF and Vertex ETF publish daily NAVs. Market price must not deviate &gt;5% from NAV.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Check the fund manager's website for the latest NAV. If the price is &gt;3% below NAV, buy and wait for convergence. If at a premium, avoid buying or sell existing units.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>Discount can persist for extended periods. Do not over‑allocate to a single ETF. Patience is required.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">11 &nbsp;|&nbsp; Reduced Corporate Income Tax for New Listings — Income Tax Act</div>
+  <div class="law-card-body">
+    <table><tbody>
+      <tr><td class="law-label">The Rule</td><td>Newly listed companies with ≥25% public float: reduced CIT of 25% (vs. standard 30%) for three consecutive years.</td></tr>
+      <tr><td class="law-label">How to Exploit</td><td>Identify companies approaching an IPO. The reduced tax burden boosts post‑tax earnings and dividends. Subscribe to fundamentally sound IPOs to benefit from this structural earnings uplift.</td></tr>
+      <tr><td class="law-label">Boundary</td><td>The company must maintain the public float; if it falls below 25%, the incentive is revoked.</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<div class="law-card">
+  <div class="law-card-title">12 &nbsp;|&nbsp; General Tax Optimisation Principles</div>
+  <div class="law-card-body">
+    <p style="font-size:10.5pt; line-height:1.35; margin-bottom:4pt;"><em>The overarching principle: structure all investments to benefit from the most favourable tax treatment available.</em></p>
+    <ul style="font-size:10.5pt; line-height:1.35; margin-bottom:0;">
+      <li>Hold all Tanzanian equities in your CDS account, not in an unlisted vehicle.</li>
+      <li>For fixed income, prefer bonds with maturity ≥3 years over Treasury bills.</li>
+      <li>Reinvest all after‑tax proceeds; tax‑free compounding is the engine of long‑term wealth.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="legal-box" style="margin-top:10pt;">
+  <strong>Disclaimer:</strong> This document is based on the laws and regulations of the United Republic of Tanzania as of June 2026. Tax and securities laws are subject to change. Always consult a qualified professional before making significant investment decisions.
+</div>
+
+<!-- Final Document Control -->
+<div class="doc-control" style="margin-top:12pt;">
+  <div class="doc-control-title">Document Control — Complete Board Pack</div>
+  <table style="margin:4pt 0 0 0;">
+    <thead><tr><th class="w30">Item</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Version</td><td>1.0 — June 2026</td></tr>
+      <tr><td>Prepared by</td><td>Theophil Christian Malundi, Chief Investment Officer, Amana Capital East Africa</td></tr>
+      <tr><td>Classification</td><td>Confidential — Board of Directors Use Only</td></tr>
+      <tr><td>Documents</td><td>Board Pack (Sections 1–8) · Document 1: DSE Wealth Engine Guide · Document 2: Tanzanian Investment Laws</td></tr>
+      <tr><td>Data Sources</td><td>DSE daily market reports · Bank of Tanzania · CMSA · Finance Acts 2021 &amp; 2022 · Income Tax Act Ch.332</td></tr>
+      <tr><td>Notice</td><td>Information based on publicly available data and current Tanzanian legislation. Does not constitute legal or tax advice.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
